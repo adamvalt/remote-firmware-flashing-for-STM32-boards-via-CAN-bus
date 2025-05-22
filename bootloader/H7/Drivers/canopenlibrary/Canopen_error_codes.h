@@ -1,0 +1,48 @@
+//
+// Created by Mario Harvan on 11/06/2023.
+//
+
+#ifndef CANOPEN_ERROR_CODES_H
+#define CANOPEN_ERROR_CODES_H
+
+#define GENERATE_ENUM(ENUM) ENUM,
+#define GENERATE_STRING(STRING) #STRING,
+
+// Error classes
+#define FOREACH_ERROR_CLASS(GEN)    \
+    GEN(CO_EMCY_CRITICAL)                   \
+    GEN(CO_EMCY_ERROR)                      \
+    GEN(CO_EMCY_WARNING)                    \
+    GEN(CO_EMCY_INFO)
+
+// Error codes
+#define FOREACH_ERROR_CODE(GEN) \
+    GEN(CO_CODE_ERR_UNKNOWN)        \
+    GEN(CO_CODE_TIMEOUT)            \
+    GEN(CO_CODE_TS_CHECK_FAIL)      \
+    GEN(CO_CODE_RTD_CHECK_FAIL)     \
+    GEN(CO_CODE_ILLEGAL_TS_RTD)     \
+    GEN(CO_CODE_NO_FLOW)            \
+    GEN(CO_CODE_UNKNOWN_DISCIPLINE) \
+    GEN(CO_CODE_WRONG_CURRENTS)     \
+    GEN(CO_CODE_ROTARY_ERR)         \
+    GEN(CO_CODE_ROTARY_SKIPPING)    \
+    GEN(CO_CODE_PEDAL_DIVERGING)    \
+    GEN(CO_CODE_PEDAL_CROSSING)     \
+    GEN(CO_CODE_PEDAL_OV_UV)        \
+    GEN(CO_CODE_BRAKE_ON_POWER)         \
+    GEN(CO_CODE_CELL_OVERVOLTAGE)       \
+    GEN(CO_CODE_CELL_UNDERVOLTAGE)      \
+    GEN(CO_CODE_CELL_OVERTEMPERATURE)   \
+    GEN(CO_CODE_CELL_UNDERTEMPERATURE)  \
+    GEN(CO_CODE_SILIX_NOT_RESPONDING)   \
+    GEN(CO_CODE_PUMP_FEEDBACK_MISMATCH) \
+    GEN(CO_CODE_VENT_FEEDBACK_MISMATCH)
+
+
+static char *error_class_string[] = {FOREACH_ERROR_CLASS(GENERATE_STRING)};
+static char *error_codes_string[] = {FOREACH_ERROR_CODE(GENERATE_STRING)};
+
+
+
+#endif //CANOPEN_ERROR_CODES_H

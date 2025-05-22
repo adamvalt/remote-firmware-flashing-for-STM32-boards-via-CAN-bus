@@ -1,0 +1,3 @@
+G:/formula/appendix/bootloader/G4/cmake-build-debug/CMakeFiles/bootloader_g4.elf.dir
+G:/formula/appendix/bootloader/G4/cmake-build-debug/CMakeFiles/edit_cache.dir
+G:/formula/appendix/bootloader/G4/cmake-build-debug/CMakeFiles/rebuild_cache.dir

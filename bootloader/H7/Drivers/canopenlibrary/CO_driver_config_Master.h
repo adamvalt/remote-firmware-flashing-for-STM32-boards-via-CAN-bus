@@ -1,0 +1,30 @@
+#ifndef CO_DRIVER_CONFIG_MASTER
+#define CO_DRIVER_CONFIG_MASTER
+
+#define CO_MULTIPLE_OD
+
+#define CO_CONFIG_NMT (CO_CONFIG_NMT_CALLBACK_CHANGE | \
+                       CO_CONFIG_NMT_MASTER | \
+                       CO_CONFIG_GLOBAL_FLAG_CALLBACK_PRE)
+
+#define CO_CONFIG_HB_CONS (CO_CONFIG_HB_CONS_ENABLE | \
+                           CO_CONFIG_HB_CONS_CALLBACK_CHANGE | \
+                           CO_CONFIG_GLOBAL_FLAG_CALLBACK_PRE)
+                           
+#define CO_CONFIG_SDO_SRV ( CO_CONFIG_SDO_SRV_SEGMENTED |\
+                           CO_CONFIG_GLOBAL_FLAG_CALLBACK_PRE)
+
+#define CO_CONFIG_SDO_SRV_BUFFER_SIZE 32
+
+#define CO_CONFIG_PDO (CO_CONFIG_RPDO_ENABLE | \
+                       CO_CONFIG_TPDO_ENABLE | \
+                       CO_CONFIG_RPDO_TIMERS_ENABLE | \
+                       CO_CONFIG_TPDO_TIMERS_ENABLE | \
+                       CO_CONFIG_GLOBAL_RT_FLAG_CALLBACK_PRE)
+
+#define CO_CONFIG_CRC16 (CO_CONFIG_CRC16_ENABLE)
+
+#define CO_CONFIG_EM (CO_CONFIG_EM_PRODUCER | CO_CONFIG_EM_CONSUMER | CO_CONFIG_EM_HISTORY)
+
+
+#endif

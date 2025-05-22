@@ -1,0 +1,5 @@
+"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -G Ninja -S G:\formula\appendix\bootloader\G4 -B G:\formula\appendix\bootloader\G4\cmake-build-debug
+-- Minimal optimization, debug info included
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: G:/formula/appendix/bootloader/G4/cmake-build-debug

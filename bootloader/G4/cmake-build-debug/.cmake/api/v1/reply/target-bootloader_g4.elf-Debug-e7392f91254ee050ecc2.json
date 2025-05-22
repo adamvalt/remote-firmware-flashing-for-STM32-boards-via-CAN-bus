@@ -1,0 +1,1547 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "bootloader_g4.elf"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"add_link_options",
+			"add_compile_options",
+			"add_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 61,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 62,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 31,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 50,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 55,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 53,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -std=gnu11 -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-mcpu=cortex-m4"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-mthumb"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-mthumb-interwork"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fno-common"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fmessage-length=0"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Og"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-g"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 9,
+					"define" : "CO_CONFIG_SLAVE"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "DEBUG"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "STM32G473xx"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "USE_HAL_DRIVER"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 11,
+					"path" : "G:/formula/appendix/bootloader/G4/Core/Inc"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "G:/formula/appendix/bootloader/G4/Core"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "G:/formula/appendix/bootloader/G4/Drivers/STM32G4xx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "G:/formula/appendix/bootloader/G4/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "G:/formula/appendix/bootloader/G4/Drivers/CMSIS/Device/ST/STM32G4xx/Include"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "G:/formula/appendix/bootloader/G4/Drivers/CMSIS/Include"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "G:/formula/appendix/bootloader/G4/Drivers/canopenlibrary"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "G:/formula/appendix/bootloader/G4/Drivers/canopenlibrary/CANopenNode"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				5,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				16,
+				18,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				102,
+				104,
+				106,
+				108,
+				110,
+				112,
+				114,
+				116,
+				118,
+				122,
+				124,
+				126,
+				128,
+				130,
+				133,
+				135,
+				137,
+				139,
+				147,
+				150,
+				152,
+				154,
+				155,
+				159,
+				161
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-mcpu=cortex-m4"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-mthumb"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-mthumb-interwork"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fno-common"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fmessage-length=0"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-x"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "assembler-with-cpp"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Og"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-g"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 9,
+					"define" : "CO_CONFIG_SLAVE"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "DEBUG"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "STM32G473xx"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "USE_HAL_DRIVER"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 11,
+					"path" : "G:/formula/appendix/bootloader/G4/Core/Inc"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "G:/formula/appendix/bootloader/G4/Core"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "G:/formula/appendix/bootloader/G4/Drivers/STM32G4xx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "G:/formula/appendix/bootloader/G4/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "G:/formula/appendix/bootloader/G4/Drivers/CMSIS/Device/ST/STM32G4xx/Include"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "G:/formula/appendix/bootloader/G4/Drivers/CMSIS/Include"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "G:/formula/appendix/bootloader/G4/Drivers/canopenlibrary"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "G:/formula/appendix/bootloader/G4/Drivers/canopenlibrary/CANopenNode"
+				}
+			],
+			"language" : "ASM",
+			"sourceIndexes" : 
+			[
+				15
+			]
+		}
+	],
+	"id" : "bootloader_g4.elf::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-Wl,-gc-sections,--print-memory-usage,-Map=G:/formula/appendix/bootloader/G4/cmake-build-debug/bootloader_g4.map",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-mcpu=cortex-m4",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-mthumb",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-mthumb-interwork",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-T",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "G:/formula/appendix/bootloader/G4/STM32G473CCTX_FLASH.ld",
+				"role" : "flags"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "bootloader_g4.elf",
+	"nameOnDisk" : "bootloader_g4.elf",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				6,
+				17,
+				19,
+				20,
+				21,
+				22,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				103,
+				105,
+				107,
+				109,
+				111,
+				113,
+				115,
+				117,
+				119,
+				120,
+				121,
+				123,
+				125,
+				127,
+				129,
+				131,
+				132,
+				134,
+				136,
+				138,
+				140,
+				148,
+				149,
+				151,
+				153,
+				156,
+				157,
+				158,
+				160,
+				162,
+				163
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				5,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				16,
+				18,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				102,
+				104,
+				106,
+				108,
+				110,
+				112,
+				114,
+				116,
+				118,
+				122,
+				124,
+				126,
+				128,
+				130,
+				133,
+				135,
+				137,
+				139,
+				147,
+				150,
+				152,
+				154,
+				155,
+				159,
+				161
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				15,
+				23,
+				48,
+				79,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				141,
+				143,
+				144,
+				145,
+				146,
+				171,
+				172
+			]
+		},
+		{
+			"name" : "Resources",
+			"sourceIndexes" : 
+			[
+				142,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "Core/Inc/fdcan.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/Inc/gpio.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/Inc/main.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/Inc/stm32g4xx_hal_conf.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/Inc/stm32g4xx_it.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/ODBootloader.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/ODBootloader.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/fdcan.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/gpio.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/main.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/stm32g4xx_hal_msp.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/stm32g4xx_it.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/syscalls.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/sysmem.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/system_stm32g4xx.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Startup/startup_stm32g473cctx.s",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/canopen_bootloader.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/canopen_bootloader.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/flash_g4.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/flash_g4.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g473xx.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Device/ST/STM32G4xx/LICENSE.txt",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/cmsis_armcc.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/cmsis_armclang.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/cmsis_armclang_ltm.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/cmsis_compiler.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/cmsis_gcc.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/cmsis_iccarm.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/cmsis_version.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/core_armv81mml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/core_armv8mbl.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/core_armv8mml.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/core_cm0.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/core_cm0plus.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/core_cm1.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/core_cm23.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/core_cm3.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/core_cm33.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/core_cm35p.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/core_cm4.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/core_cm7.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/core_sc000.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/core_sc300.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/mpu_armv7.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/mpu_armv8.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/Include/tz_context.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/CMSIS/LICENSE.txt",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_fdcan.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_cortex.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_crs.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dmamux.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_pwr.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_rcc.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_system.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_utils.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/LICENSE.txt",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/.git",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/.gitmodules",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/.clang-format",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/.git",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/.github/FUNDING.yml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/.gitignore",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_Emergency.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_Emergency.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_HBconsumer.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_HBconsumer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_NMT_Heartbeat.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_NMT_Heartbeat.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_ODinterface.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_ODinterface.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_PDO.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_PDO.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_SDOclient.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_SDOclient.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_SDOserver.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_SDOserver.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_SYNC.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_SYNC.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_TIME.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_TIME.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_config.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_driver.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_fifo.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/CO_fifo.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/crc16-ccitt.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/301/crc16-ccitt.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/303/CO_LEDs.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/303/CO_LEDs.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/304/CO_GFC.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/304/CO_GFC.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/304/CO_SRDO.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/304/CO_SRDO.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/305/CO_LSS.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/305/CO_LSSmaster.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/305/CO_LSSmaster.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/305/CO_LSSslave.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/305/CO_LSSslave.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/309/CO_gateway_ascii.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/309/CO_gateway_ascii.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/CANopen.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/CANopen.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/README.md",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/doc/CANopenNode.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/doc/CHANGELOG.md",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/doc/deviceSupport.md",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/doc/objectDictionary.md",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/doc/traceUsage.md",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/extra/CO_trace.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/extra/CO_trace.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/storage/CO_eeprom.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/storage/CO_storage.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/storage/CO_storage.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CANopenNode/storage/CO_storageEeprom.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CANopenNode/storage/CO_storageEeprom.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CO_Can_Driver.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/CO_FDCan_Driver.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CO_driver_config_Master.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CO_driver_config_Slave.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/CO_driver_target.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/Canopen_EEPROM.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/Canopen_EEPROM.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/canopenlibrary/Canopen_Main.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/Canopen_Main.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/Canopen_error_codes.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/Docs/bitTiming.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/Docs/bxcanConfig1.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/Docs/bxcanConfig2.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/Docs/fdcanConfig1.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/Docs/fdcanConfig2.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/Docs/spiConfig.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/Docs/spiConfig2.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/canopenlibrary/README.md",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "STM32G473CCTX_FLASH.ld",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "EXECUTABLE"
+}

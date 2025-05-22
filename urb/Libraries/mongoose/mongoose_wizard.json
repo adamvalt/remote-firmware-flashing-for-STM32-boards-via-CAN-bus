@@ -1,0 +1,278 @@
+{
+  "version": "1.0.2", 
+  "http": {"http": true, "https": true, "ui": true, "login": true}, 
+  "mqtt": {"enable": false, "url": "mqtt://broker.hivemq.com:1883"}, 
+  "websocket": {"enable": false}, 
+  "dns": {"type": "default", "url": "udp://8.8.8.8:53", "captive": false}, 
+  "sntp": {"enable": false, "type": 0, "url": "udp://time.google.com:123", "interval": 3600}, 
+  "modbus": {"enable": false, "port": 502}, 
+  "build": {"board": "h723", "ide": "CubeIDE", "rtos": "baremetal", "cores": [], "mode": "new"}, 
+  "api": {
+    "file_upload": {
+      "type": "upload", 
+      "read_level": 3, 
+      "write_level": 3
+    }, 
+    "state": {
+      "type": "data", 
+      "readonly": true, 
+      "attributes": {
+        "uptime": {"type": "int", "value": 10}, 
+        "version": {"type": "string", "value": "1.0.0", "size": 20}, 
+        "online": {"type": "bool", "value": true}
+      }
+    }, 
+    "security": {
+      "type": "data", 
+      "read_level": 7, 
+      "write_level": 7, 
+      "attributes": {
+        "admin_password": {"type": "string", "value": "admin", "size": 40}, 
+        "user_password": {"type": "string", "value": "user", "size": 40}
+      }
+    }, 
+    "login": {"type": "local", "attributes": {"username": {"type": "string", "value": "", "size": 20}, "password": {"type": "string", "value": "", "size": 20}}}, 
+    "boards": {
+      "type": "custom", 
+      "read_level": 0, 
+      "write_level": 0, 
+      "value": [
+        {
+          "shortname": "VCU", 
+          "online": true, 
+          "canopen_id": "0x0D", 
+          "fw_version": "1.0.0", 
+          "last_update_date": "2025-03-01 20:20", 
+          "filename": "peder", 
+          "fw_uploader": "admin"
+        },
+        {
+          "shortname": "VCU2", 
+          "online": true, 
+          "canopen_id": "0x0D", 
+          "fw_version": "1.0.0", 
+          "last_update_date": "2025-03-01 20:20", 
+          "filename": "peder", 
+          "fw_uploader": "admin"
+        }
+      ]
+    }, 
+    "reboot": {
+      "type": "action", 
+      "read_level": 3, 
+      "write_level": 3
+    }, 
+    "flashing_action": {
+      "type": "action", 
+      "read_level": 3, 
+      "write_level": 3
+    }, 
+    "flashing_history": {
+      "type": "custom", 
+      "read_level": 0, 
+      "write_level": 0, 
+      "value": [
+        {
+          "shortname": "VCU", 
+          "version": "1.0.0", 
+          "timestamp": "2025-03-01 20:20", 
+          "filename": "peder", 
+          "author": "admin", 
+          "status": "SUCCESS"
+        },
+        {
+          "shortname": "VCU", 
+          "version": "1.2.0", 
+          "timestamp": "2023-03-01 20:20", 
+          "filename": "peder", 
+          "author": "admin", 
+          "status": "FAILURE"
+        }
+      ]
+    }, 
+    "flashing": {
+      "type": "data", 
+      "read_level": 3, 
+      "write_level": 3, 
+      "attributes": {
+        "selected_board": {"type": "string", "value": "VCU", "size": 100}, 
+        "new_version": {"type": "string", "value": "1.1.0", "size": 40}, 
+        "filename": {"type": "string", "value": "No file uploaded", "size": 100}, 
+        "error": {"type": "string", "value": "something is wrong", "size": 100}, 
+        "is_active": {"type": "bool", "value": true}, 
+        "size": {"type": "int", "value": 0}, 
+        "progress": {"type": "int", "value": 42}, 
+        "state": {"type": "int", "value": 0}, 
+        "crc": {"type": "int", "value": 0}
+      }
+    }
+  }, 
+  "ui": {
+    "production": false, 
+    "brand": "TU Brno Racin", 
+    "logo": "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" style=\"enable-background:new 0 0 283.46 283.46;\" xml:space=\"preserve\" viewBox=\"63.73 50.68 156.02 182.08\">\n<g>\n\t<path d=\"M183.1,149.38c-4.33-15.97-23-29.46-23-29.46s2.2,11.55,0.46,16.93c-1.83,5.64-17.9,5.66-24.18-1.48   c-8.56-9.73-16.35-15.21-16.35-15.21c7.34,8.93,18.04,17.36,17.59,24.29c0,0,3.57-2.94,8.27-1.38c4.7,1.56,6.66,8.64,8.78,9.37   c0,0,0.25-7.3,5.41-7.17c4.81,0.12,9.96,4.86,11.68,15.42c2.38,14.63-13.27,39.81-41.25,31.17C107.72,184.82,95,168.09,95,168.09   s12.17,19.5,28.81,29.89c4.05,2.53,12.1,7.61,17.92,7.61c6.29,0,14.94-5.58,22.69-11.33C180.16,182.58,186.73,162.74,183.1,149.38z    M165.25,190.95c25.33-25.27,6.22-50.36-1.93-52.45c0,0,1.42-4.2,0.21-13.2c0,0,16.34,12.15,18.65,27.41   C185.56,175.1,165.25,190.95,165.25,190.95z\"/>\n\t<path d=\"M199.65,53.66c-1.11-1.56-2-2.56-2.53-2.96c0,0,10.62,25.81-3.1,73.8c0,0,17.91-26.76,17.65-15.42   c-0.71,20.92-7.66,39.61-17.01,55.04c1.14-28.49-10.39-35.19-11-39.45c-0.3-2.09,1.1-3.41,1.1-3.41s-9.01-4.34-11.11-16.91   c-0.26-1.58,1.15-2.59,1.15-2.59s-8.26-5.46-24.12-9.66c-15.86-4.2-32.95-3.7-37.94-4.13c-4.98-0.43-12.39-4.06-15.33-5.59   C94.46,80.85,92.98,78,92.98,78s-4.94,5.93,0.83,13.33c1.59,2.03,9.96,2.7,23.05,6.17c0.26,0.07,0.51,0.14,0.77,0.22   c-1.03,1.63-1.82,3.94-1,6.54c0,0,0.29-3.67,4.11-5.58c4.68,1.56,9.27,3.67,13.48,6.03c-1.46,1.81-3.87,6.37-2.19,11.6   c0,0,0.18-6.19,6.49-9.01c9.1,5.88,15.42,12.59,14.79,16.48c-1.07,6.56-9.83,10.16-9.83,10.16c-2.47-3.49-4.96-6.67-7.44-9.6   c-0.18-5.77,7.08-9.37,7.08-9.37c-5.44,0.35-8.88,2.95-10.8,5.17c-3.13-3.38-6.21-6.35-9.2-8.95c1.04-3.19,3.48-4.51,3.48-4.51   c-2.55,0.02-4.41,1.29-5.66,2.67c-4.68-3.86-9.09-6.82-13.01-9.07c0.2-2.08,1.09-3.41,1.09-3.41c-1.09,0.79-1.83,1.73-2.33,2.71   c-9.51-5.25-15.91-6.33-15.91-6.33c3.3,3.63,4,10.18,4,10.18c26.78,10.97,38.8,27.22,44.07,31.93c5.27,4.71,15.64,4.87,18.87,2.03   c3.62-3.19,0.08-21.19,0.08-21.19s20.96,13.33,26.87,30.49c9.67,28.12-13.97,49.2-30.32,58.88c-4.7,2.66-8.67,4.07-11.38,4.07   h-1.25h-1.25c-14.69,0-66.69-41.35-68.69-100.55C71.5,95.93,89.44,124.5,89.44,124.5c-13.72-47.99-3.11-73.8-3.11-73.8   c-0.53,0.4-1.41,1.41-2.52,2.96c-7.26,9.31-24.86,37.78-18.84,83.21c7.64,57.79,69.67,95.89,76.51,95.89h0.25h0.25   c6.83,0,68.86-38.1,76.51-95.89C224.51,91.45,206.92,62.97,199.65,53.66z M94.67,86.29c-1.51-2.21,2.02-2.59,2.02-2.59   c-1.06,0.8-0.93,1.67-0.07,2.75c0.7,0.89,2.13,0.28,2.13,0.28C98.64,87.36,95.97,88.19,94.67,86.29z M163.37,105.7   c-1.58,0.62-3.53,2.19-5.99,1.68c-2.7-0.56-4.19-4.41-5.47-4.89c0,0,2.28-1.5,5.57-1.25c3.29,0.25,7.04,0.83,8.83,4.16   C166.3,105.38,164.96,105.09,163.37,105.7z\"/>\n</g>\n</svg>", 
+    "toolbar": {
+      "label": "TU Brno Racing eD4"
+    }, 
+    "heartbeat": 1, 
+    "theme": {
+      "sidebarWidth": "15rem", 
+      "textSize": "0.875rem", 
+      "inputBorderRadius": "0.21rem 0.25rem", 
+      "buttonBgColor": "#ff3355", 
+      "buttonBorderColor": "#ec0029", 
+      "buttonHoverColor": "#fc6773", 
+      "sidebarSelectedItemColor": "#000000", 
+      "sidebarItemBorderColor": "#000000", 
+      "panelTextColor": "#000000", 
+      "inputTextColor": "#000000", 
+      "progressBarColor": "#000000", 
+      "progressTrackColor": "#000000", 
+      "progressBorderColor": "#000000", 
+      "progressTextColor": "#000000", 
+      "toggleTrackColorOff": "#000000", 
+      "toggleTrackColorOn": "#000000", 
+      "toggleHandleColor": "#000000", 
+      "toggleBorderColor": "#000000", 
+      "sliderTrackColor": "#000000", 
+      "sliderBaseColor": "#000000", 
+      "sliderHandleColor": "#000000", 
+      "sliderTextColor": "#000000", 
+      "iconColor": "#000000", 
+      "gaugeBarColor": "#000000", 
+      "gaugeBorderColor": "#000000", 
+      "gaugeTextColor": "#000000", 
+      "gaugeTrackColor": "#000000", 
+      "gaugeRangeTextColor": "#000000", 
+      "tooltipBgColor": "#000000", 
+      "tooltipBorderColor": "#000000", 
+      "tooltipTextColor": "#000000", 
+      "graphBaseColor": "#000000", 
+      "graphGridLineColor": "#000000", 
+      "graphRangeTextColor": "#000000"
+    }, 
+    "classes": "", 
+    "pages": [
+      {"title": "Dashboard", "icon": "desktop", "level": 0, "classes": "page", "layout": [
+          {"classes": "container", "css": "gap: 0.75rem;\nflex-wrap: wrap;", "layout": [
+              {"classes": "panel", "css": "flex-basis: 0 0 auto;", "layout": [
+                  {"classes": "container", "css": "flex: 0 0 auto;\nwidth: 20.125rem;\njustify-content: space-between;\ngap: 0.5rem;", "layout": [
+                      {"format": "${current.shortname}", "css": "font-weight: 600;\nfont-size: 1.25rem;", "classes": "container title"},
+                      {"classes": "container", "css": "align-items: center;\njustify-content: center;\ngap: 0.5rem;\nflex-wrap: wrap;", "layout": [
+                          {"format": "ID: ${current.canopen_id}"},
+                          {"classes": "labeled", "layout": [
+                              {"classes": "label", "format": "Online status", "css": "flex: 0 0 auto;\nwidth: 4.5rem;"},
+                              {"type": "icon", "icon": "circle", "css": "${current.online ? \"color:var(--drawColor);\" : \"color:var(--bgColor);\"}"}
+                            ], "css": "align-items: center;\njustify-content: center;"}
+                        ]}
+                    ]},
+                  {"css": "height: 1.1875rem;", "layout": [
+                      {"format": "Current firmware version:", "classes": "label"},
+                      {"format": "${current.fw_version}"}
+                    ], "classes": "labeled"},
+                  {"css": "height: 1.1875rem;", "layout": [
+                      {"format": "Current firmware uploader:", "classes": "label"},
+                      {"format": "${current.fw_uploader}"}
+                    ], "classes": "labeled"},
+                  {"css": "height: 1.1875rem;", "layout": [
+                      {"format": "Current firmware filename:", "classes": "label"},
+                      {"format": "${current.filename}"}
+                    ], "classes": "labeled"},
+                  {"css": "height: 1.1875rem;", "layout": [
+                      {"format": "Last update date:", "classes": "label"},
+                      {"format": "${current.last_update_date}"}
+                    ], "classes": "labeled"},
+                  {"type": "action", "title": "reboot", "icon": "refresh", "ref": "reboot", "params": "${current.shortname}", "trigger_on_press_and_release": false}
+                ], "ref": "boards"}
+            ]}
+        ]},
+      {"title": "Firmware Update", "icon": "import", "level": "3", "classes": "page", "layout": [
+          {"classes": "container", "css": "flex-wrap: wrap;", "layout": [
+              {"classes": "panel", "layout": [
+                  {"classes": "container", "css": "justify-content: space-between;\ngap: 0.5rem;\nflex-wrap: wrap;", "layout": [
+                      {"classes": "title", "format": "Firmware Update", "css": "font-weight: 700;\nfont-size: 1.3rem;"},
+                      {"type": "dropdown", "ref": "flashing.selected_board", "options": "VCU,PDU,ASB,BMS,SCM,PDB,STEERING,COOLING,TIRETEMP", "autosave": true, "css": "font-weight: 600;\nfont-size: 1rem;"}
+                    ]},
+                  {"classes": "labeled", "layout": [
+                      {"classes": "label", "format": "New firmware version"},
+                      {"type": "input", "ref": "flashing.new_version", "autosave": true}
+                    ], "css": "height: 1.1875rem;"},
+                  {"classes": "labeled", "layout": [
+                      {"classes": "label", "format": "Upload new firmware"},
+                      {"type": "upload", "title": "select .bin or .hex file...", "icon": "upload", "ref": "file_upload", "accept": ".bin,.hex"}
+                    ]},
+                  {"format": "Uploaded file: ${flashing.filename}"},
+                  {"type": "action", "title": "Flash ${flashing.selected_board} to firmware version '${flashing.new_version}'", "icon": "caret-right", "ref": "flashing_action", "trigger_on_press_and_release": false, "params": "", "css": "height: 2.25rem;"},
+                  {"type": "progress", "ref": "flashing.progress"},
+                  {"classes": "container", "css": "display: ${ flashing.error != \"\" ? \"block\" : \"none\"};\nborder: 1px solid #e2e8f0;\nborder-radius: 0.25rem;\npadding: 0.5rem;\ngap: 0.5rem;\nflex-wrap: wrap;", "layout": [
+                      {"format": "ERROR: ${flashing.error}", "css": "color: red;\nfont-weight: 600;"}
+                    ]}
+                ], "css": "gap: 0.75rem;"}
+            ]}
+        ]},
+      {"classes": "page", "title": "Update Events", "icon": "bell", "level": "0", "layout": [
+          {"classes": "panel", "layout": [
+              {"classes": "title", "format": "Events"},
+              {"layout": [
+                  {"classes": "flex", "layout": [
+                      {"css": "flex: 0 0 auto;\nwidth: 5rem;", "format": "Board"},
+                      {"css": "width: 8rem;", "format": "Time"},
+                      {"css": "flex: 0 0 auto;\nwidth: 5rem;", "format": "Version"},
+                      {"css": "flex: 0 0 auto;\nwidth: 8rem;", "format": "Filename"},
+                      {"css": "flex: 0 0 auto;\nwidth: 8rem;", "format": "Author"},
+                      {"css": "flex: 0 0 auto;\nwidth: 8rem;", "format": "Success"}
+                    ]}
+                ]},
+              {"layout": [
+                  {"classes": "flex", "ref": "flashing_history", "css": "padding: 0.1rem 0;\nborder-top: 1px solid #eee;", "layout": [
+                      {"css": "flex: 0 0 auto;\nwidth: 5rem;\ntext-align: center;", "format": "${current.shortname}"},
+                      {"css": "flex: 0 0 auto;\nwidth: 8rem;", "format": "${current.timestamp}"},
+                      {"css": "flex: 0 0 auto;\nwidth: 5rem;", "format": "${current.version}"},
+                      {"css": "flex: 0 0 auto;\nwidth: 8rem;", "format": "${current.filename}"},
+                      {"css": "flex: 0 0 auto;\nwidth: 8rem;", "format": "${current.author}"},
+                      {"css": "flex: 0 0 auto;\nwidth: 8rem;", "format": "${current.status}"}
+                    ]}
+                ]}
+            ]}
+        ]},
+      {"classes": "page", "title": "Admin Password", "icon": "lock", "level": 7, "layout": [
+          {"classes": "container", "css": "flex-wrap: wrap;", "layout": [
+              {"classes": "panel", "css": "width: 24rem;", "layout": [
+                  {"classes": "title", "format": "Change admin password"},
+                  {"classes": "labeled", "layout": [
+                      {"classes": "label", "format": "New password"},
+                      {"type": "input", "ref": "security.admin_password", "input": "password"}
+                    ]},
+                  {"classes": "labeled", "css": "margin-top: 0.25rem; justify-content:end;", "layout": [
+                      {"type": "savebutton", "ref": "security", "title": "save", "icon": "save"}
+                    ]}
+                ]}
+            ]}
+        ]}
+    ], 
+    "login": {"title": "login", "icon": "user", "level": 0, "classes": "page", "layout": [
+        {"classes": "container", "css": "flex-grow: 1;\njustify-content: center;", "layout": [
+            {"classes": "container", "css": "flex: 0 0 auto;\npadding-left: 7.25rem;\npadding-top: 5.5rem;\nwidth: 60.1875rem;\ncolor: #ffffff;\nbackground: #e4002b;\nflex-direction: column;\nflex-grow: 1;\nflex-wrap: wrap;", "layout": [
+                {"classes": "container", "css": "flex: 0 0 auto;\npadding-left: 1.75rem;\npadding-bottom: 0.5rem;\npadding-right: 0.5rem;\npadding-top: 0.5rem;\nwidth: 49rem;\nbackground: #e4002b;\nborder-radius: 0.25rem;\nflex-wrap: wrap;", "layout": [
+                    {"format": "TU Brno Racing", "css": "flex: 0 0 auto;\nheight: 5.3125rem;\nwidth: 42.25rem;\nbackground: #e4002b;\ncolor: #ffffff;\nfont-weight: 700;\nfont-size: 4rem;"},
+                    {"format": "eD4 Remote Flashing System", "css": "flex: 0 0 auto;\nwidth: 42.25rem;\nbackground: #e4002b;\ncolor: #ffffff;\nfont-weight: 700;\nfont-size: 3rem;"}
+                  ]},
+                {"classes": "container", "css": "gap: 0.5rem;\nflex-wrap: wrap;\nflex-grow: 1;", "layout": [
+                    {"type": "image", "image": "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" style=\"enable-background:new 0 0 283.5 283.5;\" xml:space=\"preserve\" viewBox=\"25.12 65.55 217.2 133.15\">\n<g>\n\t<path d=\"M191.4,169.5c1.4-2.4,2.8-4.9,4.2-7.3c0.4-0.7,0.1-1.2-0.7-1.2c-2.6,0-5.1,0-7.7,0c-0.7,0-1,0.2-1.4,0.8   c-0.9,1.6-1.8,3.1-2.7,4.7c-0.4,0.6-0.8,1-1.6,1c-0.8,0.1-1.4-0.3-0.9-1c1.9-3.4,3.9-6.7,5.8-10.1c0.4-0.6,0.8-1,1.6-1   c0.8-0.1,1.4,0.3,0.9,1c-0.4,0.7-0.8,1.4-1.2,2.1c-0.4,0.7-0.1,1.2,0.7,1.2c2.6,0,5.1,0,7.7,0c0.7,0,1-0.2,1.4-0.8   c0.7-1.3,1.5-2.5,2.2-3.8c0.4-0.7,0.1-1.2-0.7-1.2c-6.7,0-13.4,0-20.2,0c-0.7,0-1,0.2-1.4,0.8c-2.6,4.5-5.2,9.1-7.9,13.6   c-0.4,0.7-0.1,1.2,0.7,1.2c3.4,0,6.7,0,10.1,0c0.5,0,0.7,0.2,0.8,0.7c0.4,3.3,3.6,7.3,8.6,10.6   C187.8,175.9,190.7,170.6,191.4,169.5z\"/>\n\t<path d=\"M143.6,168.7c2.6-4.5,5.2-9.1,7.9-13.6c0.4-0.7,0.1-1.2-0.7-1.2c-2.6,0-5.1,0-7.7,0c-0.7,0-1,0.2-1.4,0.8   c-2.6,4.5-5.2,9.1-7.9,13.6c-0.4,0.7-0.1,1.2,0.7,1.2c2.6,0,5.1,0,7.7,0C142.8,169.5,143.2,169.3,143.6,168.7z\"/>\n\t<path d=\"M110.1,169.5c6.7,0,13.4,0,20.2,0c0.7,0,1-0.2,1.4-0.8c1.2-2.2,2.5-4.3,3.8-6.5c0.4-0.7,0.1-1.2-0.7-1.2   c-2.6,0-5.1,0-7.7,0c-0.7,0-1,0.2-1.4,0.8c-0.9,1.6-1.8,3.1-2.7,4.7c-0.4,0.6-0.8,1-1.6,1c-0.8,0.1-1.4-0.3-0.9-1   c1.9-3.4,3.9-6.7,5.8-10.1c0.4-0.6,0.8-1,1.6-1c0.8-0.1,1.4,0.3,0.9,1c-0.4,0.7-0.8,1.4-1.2,2.1c-0.4,0.7-0.1,1.2,0.7,1.2   c2.6,0,5.1,0,7.7,0c0.7,0,1-0.2,1.4-0.8c0.7-1.3,1.5-2.5,2.2-3.8c0.4-0.7,0.1-1.2-0.7-1.2c-6.7,0-13.4,0-20.2,0   c-0.7,0-1,0.2-1.4,0.8c-2.6,4.5-5.2,9.1-7.9,13.6C109,169,109.3,169.5,110.1,169.5z\"/>\n\t<path d=\"M167.9,168.7c-0.3,0.6-0.7,0.8-1.4,0.8c-2.6,0-5.1,0-7.7,0c-0.8,0-1.1-0.5-0.7-1.2c2.3-4,4.6-7.9,6.9-11.9   c0.4-0.8-0.2-1.1-0.9-1c-0.8,0.1-1.2,0.4-1.6,1c-2.4,4.1-4.7,8.2-7.1,12.3c-0.3,0.6-0.7,0.8-1.4,0.8c-2.6,0-5.1,0-7.7,0   c-0.8,0-1.1-0.5-0.7-1.2c2.6-4.5,5.2-9.1,7.9-13.6c0.3-0.6,0.7-0.8,1.4-0.8c6.7,0,13.5,0,20.2,0c0.8,0,1.1,0.5,0.7,1.2   C173.2,159.6,170.6,164.1,167.9,168.7z\"/>\n\t<path d=\"M69.4,169.5c0.7,0,1-0.2,1.4-0.8l7.1-12.3c0.4-0.6,0.8-1,1.6-1c0.8-0.1,1.4,0.3,0.9,1l-1.2,2.1c-0.4,0.7-0.1,1.2,0.7,1.2   h7.7c0.7,0,1-0.2,1.4-0.8l2.2-3.8c0.4-0.7,0.1-1.2-0.7-1.2H70.2c-0.7,0-1,0.2-1.4,0.8L61,168.3c-0.4,0.7-0.1,1.2,0.7,1.2   L69.4,169.5L69.4,169.5z\"/>\n\t<path d=\"M102.2,120.1c2.3,0,4.6,0,6.9,0c0.9,0,1.2,0.6,0.8,1.4c-5.6,9.6-11.1,19.2-16.7,28.8c-0.4,0.6-0.8,0.9-1.6,0.9   c-6.5,0-12.9,0-19.4,0c-0.9,0-1.2-0.6-0.8-1.4c5.6-9.6,11.1-19.2,16.7-28.8c0.4-0.7,0.8-0.9,1.6-0.9c2.3,0,4.6,0,6.9,0   c0.9,0,1.2,0.6,0.8,1.4c-5.1,8.8-10.1,17.5-15.2,26.3c-0.5,0.9,0.2,1.2,1.1,1.2c0.9-0.1,1.4-0.4,1.8-1.2   c5.2-8.9,10.3-17.8,15.4-26.7C101.1,120.4,101.5,120.1,102.2,120.1z\"/>\n\t<path d=\"M145.7,136.2c0.4-0.8,0.9-1.1,1.8-1.2c0.9-0.1,1.6,0.3,1.1,1.2c-0.5,0.8-0.9,1.6-1.4,2.4s-0.1,1.4,0.8,1.4   c2.9,0,5.9,0,8.9,0c0.8,0,1.2-0.2,1.6-0.9c0.8-1.5,1.7-2.9,2.5-4.4c0.5-0.8,0.1-1.4-0.8-1.4c-7.7,0-15.5,0-23.2,0   c-0.8,0-1.2,0.2-1.6,0.9c-3,5.2-6,10.4-9,15.6c-0.5,0.8-0.1,1.4,0.8,1.4c2.9,0,5.9,0,8.9,0c0.8,0,1.2-0.2,1.6-0.9   C140.2,145.6,143,140.9,145.7,136.2z\"/>\n\t<path d=\"M180.3,150.3c-0.4,0.6-0.8,0.9-1.6,0.9c-2.9,0-5.9,0-8.9,0c-0.9,0-1.2-0.6-0.8-1.4c2.6-4.6,5.3-9.1,7.9-13.7   c0.5-0.9-0.2-1.2-1.1-1.2c-0.9,0.1-1.4,0.4-1.8,1.2c-2.7,4.7-5.4,9.4-8.2,14.1c-0.4,0.6-0.8,0.9-1.6,0.9c-2.9,0-5.9,0-8.9,0   c-0.9,0-1.2-0.6-0.8-1.4c3-5.2,6-10.4,9-15.6c0.4-0.7,0.8-0.9,1.6-0.9c7.7,0,15.5,0,23.2,0c0.9,0,1.2,0.6,0.8,1.4   C186.3,139.9,183.3,145.1,180.3,150.3z\"/>\n\t<path d=\"M100.7,161c1,0,1.5-0.5,1.9-1.3c0.6-1,1.2-2.1,1.8-3.1c0.4-0.8-0.2-1.1-0.9-1c-0.8,0.1-1.2,0.4-1.6,1   c-0.4,0.8-0.9,1.6-1.4,2.4c-0.3,0.6-0.7,0.8-1.4,0.8c-2.5,0-5.1,0-7.6,0c-0.8,0-1.1-0.5-0.7-1.2c0.7-1.3,1.5-2.5,2.2-3.8   c0.3-0.6,0.7-0.8,1.4-0.8c6.7,0,13.4,0,20.2,0c0.8,0,1.1,0.5,0.7,1.2c-2.6,4.5-5.2,9.1-7.9,13.6c-0.3,0.6-0.7,0.8-1.4,0.8   c-6.7,0-13.4,0-20.2,0c-0.8,0-1.1-0.5-0.7-1.2c1.2-2.2,2.5-4.3,3.8-6.5c0.3-0.6,0.7-0.8,1.4-0.8C93.8,161,97.2,161,100.7,161z    M98.9,166.5c0.6-0.9,1.1-1.9,1.7-2.9c0.4-0.8-0.2-1.1-0.9-1c-0.8,0.1-1.2,0.4-1.6,1c-0.6,0.9-1.1,1.9-1.7,2.9   c-0.4,0.8,0.2,1.1,0.9,1C98.1,167.5,98.5,167.1,98.9,166.5z\"/>\n\t<path d=\"M216.6,133.3c0.9,0,1.2,0.6,0.8,1.4c-3,5.2-6,10.4-9,15.6c-0.4,0.6-0.8,0.9-1.6,0.9c-7.7,0-15.5,0-23.2,0   c-0.9,0-1.2-0.6-0.8-1.4c3-5.2,6-10.4,9-15.6c0.4-0.7,0.8-0.9,1.6-0.9C201.1,133.3,208.8,133.3,216.6,133.3z M198.3,147.8   c2.2-3.9,4.5-7.7,6.7-11.6c0.5-0.9-0.2-1.2-1.1-1.2c-0.9,0.1-1.4,0.4-1.8,1.2c-2.2,3.9-4.5,7.7-6.7,11.6c-0.5,0.9,0.2,1.2,1.1,1.2   C197.4,148.9,197.9,148.5,198.3,147.8z\"/>\n\t<path d=\"M131.7,133.3c-0.4,0-0.7,0-1.1,0c1.4,0,2.3,1.5,1.6,2.7c-2.8,4.8-5.5,9.5-8.2,14.3c-0.4,0.6-0.8,0.9-1.6,0.9   c-7.7,0-15.4,0-23.1,0c-0.9,0-1.2-0.6-0.8-1.4c5.6-9.6,11.1-19.2,16.7-28.8c0.4-0.7,0.8-0.9,1.6-0.9c7.7,0,15.4,0,23.1,0   c0.9,0,1.2,0.6,0.8,1.4c-1.9,3.3-3.9,6.7-5.8,10C134.1,132.8,133.2,133.3,131.7,133.3z M123,131.7c1.8-3,3.5-6,5.3-9   c0.5-0.8-0.3-1-1-1.1c-0.8-0.1-1.3,0.1-1.7,0.8c-1.8,3-3.5,6-5.2,9c-0.5,0.8,0.3,1,1,1.1C122.1,132.5,122.6,132.4,123,131.7z    M114,147.8c2.2-3.9,4.5-7.7,6.7-11.6c0.5-0.9-0.2-1.2-1.1-1.2c-0.9,0.1-1.4,0.4-1.8,1.2c-2.2,3.9-4.5,7.7-6.7,11.6   c-0.5,0.9,0.2,1.2,1.1,1.2C113.1,148.9,113.5,148.5,114,147.8z\"/>\n\t<path d=\"M65,158c8.1-14.1,14.3-24.8,22.5-38.8c0.2-0.3,0.4-0.5,0.8-0.5c3.4,0,6.7,0,10.1,0c0.4,0,0.6-0.1,0.8-0.5   c0.5-0.9,1-1.8,1.6-2.7c0.2-0.4,0.1-0.7-0.4-0.7c-6.9,0-13.7,0-20.6,0c-7.1,0-11.9-5-14.5-12.3c0-0.1,0-0.1,0,0   c1.8,6.4,4.3,10.5,7.8,12.3c3.5,1.8,4.5,3.9,3.1,6.3C70,131.8,65.8,139,59.6,149.7c-0.4,0.7-0.4,1.2,0,1.9c1.3,2.1,2.5,4.3,3.8,6.4   C63.8,158.8,64.5,158.8,65,158z\"/>\n\t<path d=\"M158,95.8c-13.4-20.3-26.1-18.2-26.1-18.2c7.4,1.2,9,5.8,5.9,6.5c-8.3,1.8-13.3-9.4-20.5-14.7c-4.6-3.3-8.7-2.7-8.7-2.7   s3.6,0.4,5.5,1.6c3.7,2.5,7.9,8.9-1.8,6.9c-9.7-2-14.6-13.5-31.1-8.3c0,0,14.2-0.9,22.5,11.4c6.3,9.3-8.4,3.8-8.4,3.8   c11.7,8.2,23.7,0,29.4,5.6c8.8,8.7-7,4.6-7,4.6c10,7.5,22.2-1.4,32.6,0.1C155.8,93.5,158,95.8,158,95.8z\"/>\n\t<path d=\"M226.9,101.8c-0.6-1.3,0.1-2.5,0.1-2.5s-6.8-1.3-10.4-9.3c-0.4-1,0.3-1.9,0.3-1.9s-6.4-2.2-17.8-2.2s-22.6,3.3-26,3.9   c-3.4,0.6-8.9-0.5-11.2-1s-3.7-2.1-3.7-2.1s-2.2,4.8,2.9,8.7c1.4,1.1,7.1,0,16.4,0c0.2,0,0.4,0,0.6,0c-0.4,1.3-0.5,2.9,0.5,4.5   c0,0-0.5-2.5,1.8-4.4c3.4,0.2,6.8,0.8,10,1.6c-0.6,1.5-1.4,4.9,0.6,8.1c0,0-1-4.2,2.7-7.1c7.1,2.3,12.5,5.7,12.7,8.3   c0.4,4.6-4.8,8.5-4.8,8.5c-2.3-1.9-4.5-3.6-6.6-5.1c-1.1-3.8,3.1-7.5,3.1-7.5c-3.6,1.2-5.4,3.5-6.3,5.3c-2.7-1.7-5.2-3.1-7.7-4.3   c0.1-2.3,1.5-3.6,1.5-3.6c-1.7,0.5-2.7,1.6-3.3,2.8c-3.8-1.7-7.2-2.9-10.2-3.7c-0.2-1.4,0.1-2.5,0.1-2.5c-0.6,0.7-0.9,1.5-1.1,2.2   c-7.2-1.8-11.7-1.4-11.7-1.4c2.8,1.8,4.4,6.1,4.4,6.1c19.7,2.6,30.6,11.3,34.9,13.5s11.3,0.5,12.9-2c1.9-2.8-3.7-14.1-3.7-14.1   s16.3,5.2,23.2,15.5c11.4,17-5,44.8-31.7,44.8h-1c-0.7,0-1,0.2-1.4,0.8c-2.6,4.5-1.1,1.9-3.8,6.4c-0.4,0.7-4.5,6.5-3,12   c2.3-14.3,14-9.1,36.2-17.8c2-0.8,4.2,0.5,4.2,0.5c0.9-2.2,2.1-3.4,3.6-6.1c5.2-9.2,4.5-17.1,5-18.2c0.9-1.7,3.1-1.6,3.1-1.6   C240,107.7,228.2,105,226.9,101.8z M160.9,92c-1.4-1.2,0.9-2.1,0.9-2.1c-0.6,0.7-0.3,1.3,0.4,1.8c0.6,0.5,1.5-0.2,1.5-0.2   C163.8,92,162.1,93,160.9,92z M210,92.8c-0.9,0.7-2,2.1-3.7,2.2c-1.9,0.1-3.6-2.2-4.5-2.3c0,0,1.2-1.4,3.5-1.8   c2.2-0.4,4.8-0.7,6.6,1.2C211.9,92,211,92.1,210,92.8z\"/>\n\t<path d=\"M230.9,118.3c-5.7-9.9-20.5-15.5-20.5-15.5s3.5,7.3,3.3,11.2c-0.2,4.1-10.9,6.9-16.3,3.3c-7.4-5-13.6-7.2-13.6-7.2   c6.5,4.7,15.1,8.4,16,13.1c0,0,1.9-2.6,5.3-2.4s5.9,4.6,7.5,4.7c0,0-1.1-4.9,2.3-5.7c3.2-0.8,7.5,1.5,10.5,8.2   c4.2,9.3-0.8,26-22.5,26c-0.7,0-1,0.2-1.4,0.8c-0.7,1.3-1.5,2.5-2.2,3.8c-0.4,0.7-0.1,1.2,0.7,1.2c0,0,14.3,1.1,25.6-11.6   C234.5,138,235.6,126.6,230.9,118.3z M224.4,147.5c13.9-19.2-2.9-32.9-8.7-32.9c0,0,0.2-3-2.2-8.8c0,0,13,5.2,17.2,14.9   C237,135,224.4,147.5,224.4,147.5z\"/>\n\t<path d=\"M57.5,169.5c0.7,0,1-0.2,1.4-0.8c1.2-2.2,2.5-4.3,3.8-6.5c0.4-0.7,0.1-1.2-0.7-1.2c0,0-19.6,0-29.6,13.3   c-9.1,12.1-7.2,22.9-6.9,24.4c0,0,2.7-9.8,17.5-20.6c0,0-7.5,1.2-8,0.3C34.6,178,40.7,169.5,57.5,169.5z\"/>\n</g>\n</svg>", "css": "flex: 0 0 auto;\nmargin-top: 5rem;\nwidth: 45rem;"}
+                  ]}
+              ]},
+            {"classes": "container", "css": "flex: 0 0 auto;\nwidth: 46.625rem;\nbackground: #ffffff;\nflex-direction: column;\njustify-content: center;\nalign-items: center;\ngap: 0.5rem;\nflex-grow: 1;\nflex-wrap: wrap;", "layout": [
+                {"classes": "container", "css": "flex: 0 0 auto;\nmargin-top: 8rem;\nwidth: 18rem;\nflex-direction: column;\ngap: 0.5rem;\nflex-wrap: wrap;", "layout": [
+                    {"format": "Sign in", "css": "font-size: 2rem;\nfont-weight: 800;\nmargin-bottom: 1rem;"},
+                    {"format": "Username", "classes": "title"},
+                    {"type": "input", "input": "text", "ref": "login.username", "autosave": false},
+                    {"format": "Password", "classes": "title"},
+                    {"type": "input", "input": "password", "ref": "login.password", "autosave": false},
+                    {"type": "loginbutton", "title": "Sign In", "icon": "sign-in", "ref": "login", "css": "margin-top: 1rem;"}
+                  ]}
+              ]}
+          ]}
+      ]}, 
+    "basetheme": "default"
+  }
+}

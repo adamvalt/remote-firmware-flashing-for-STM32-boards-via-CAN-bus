@@ -1,0 +1,3 @@
+[submodule "Drivers/canopenlibrary"]
+	path = Drivers/canopenlibrary
+	url = https://gitlab.com/tubrno-e2/canopenlibrary.git
